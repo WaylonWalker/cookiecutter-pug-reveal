@@ -24,3 +24,4 @@ run ```render.bat``` in the root folder
 
 Edit your_presentation.pug file in the slides folder.
 
+![example.gif](cookiecutter_pug_reveal.gif)
