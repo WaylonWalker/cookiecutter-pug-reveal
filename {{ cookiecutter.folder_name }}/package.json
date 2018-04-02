@@ -1,0 +1,16 @@
+{
+  "name": "{{ cookiecutter.title }}",
+  "version": "{{ cookiecutter.version }}",
+  "description": "{{ cookiecutter.description }}",
+  "main": "index.js",
+  "scripts": {
+    "pug": "pug slides -o .",
+    "pug:watch": "npm run pug -- -w",
+    "sass": "node-sass static/sass/custom.sass | postcss -o static/css/custom.css",
+    "build": "npm run pug & npm run sass",
+    "watch": "watch -p \"**/*.sass\" -p \"**/*.scss\" -p \"**/*.pug\" -c \"npm run build\"",
+    "start": "npm run watch"
+  },
+  "author": "{{ cookiecutter.author_name }}",
+  "license": "ISC"
+}

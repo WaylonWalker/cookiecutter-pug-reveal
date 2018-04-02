@@ -1,0 +1,31 @@
+extends ../templates/layouts/presentation
+include ../templates/includes/_mixins
+block append config
+  -
+    // config.title = '{{cookiecutter.title}}';
+    // config.description = '{{cookiecutter.description}}';
+    // config.date = '{{cookiecutter.date}}'
+    //- config.author.name = '{{cookiecutter.author_name}}'
+    //- config.author.email = '{{cookiecutter.author_email}}'
+    //- config.author.link = '{{cookiecutter.author_url}}'
+    //- config.author.twitter = '{{cookiecutter.author_twitter}}'
+    //- config.author.github = '{{cookiecutter.author_github}}'
+    //- config.confidential = ''
+    //- options black, white, league, beige, sky, night, serif, simple, solarized
+    //- config.theme = 'black'
+  -
+
+block append defaultscripts
+
+block append styles
+  -
+  link(rel="stylesheet" href="static/css/custom.css")
+  -
+
+
+block append slides
+  +slide
+    +slide
+      h1 {{cookiecutter.title}}
+      p.
+        {{cookiecutter.description}}

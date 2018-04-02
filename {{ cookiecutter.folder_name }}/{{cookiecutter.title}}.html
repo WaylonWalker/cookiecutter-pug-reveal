@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="icon" href="./static/img/favicon.ico"><title>{{ cookiecutter.title }}</title><meta name="description" content="{{ cookiecutter.description }}"><link rel="stylesheet" href="static/css/reveal.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><link id="theme" rel="stylesheet" href="static/css/theme/black.css"><link rel="stylesheet" href="static/lib/css/zenburn.css"><script>var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'static/css/print/pdf.css' : 'static/css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script><link rel="stylesheet" href="static/css/custom.css"></head><body><div class="reveal"><div class="slides"><section><h1>{{ cookiecutter.title }}</h1><h3>{{ cookiecutter.description }}</h3><p><small>{{ cookiecutter.date }} / 
+<a href="{{ cookiecutter.author_url }}">{{ cookiecutter.author_name }}</a>
+<a href="https://twitter.com/{{ cookiecutter.author_twitter }}"><i class="fa fa-twitter"></i> <span class="label">{{ cookiecutter.author_twitter }}</span></a> /
+<a href="https://github.com/{{ cookiecutter.author_github }}"><i class="fa fa-github"></i> <span class="label">{{ cookiecutter.author_github }}</span></a></small></p></section><section><section><h1>{{cookiecutter.title}}</h1><p>{{cookiecutter.description}}</p></section></section></div></div><footer><ul><li></li><li>{{ cookiecutter.author_name }}</li><li>{{ cookiecutter.date }}</li></ul></footer><script src="static/lib/js/head.min.js"></script><script src="static/js/reveal.js"></script><script>Reveal.initialize({
+  history: true,
+
+  dependencies: [
+    { src: 'static/plugin/markdown/marked.js' },
+    { src: 'static/plugin/markdown/markdown.js' },
+    { src: 'static/plugin/notes/notes.js', async: true },
+    { src: 'static/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+  ]
+});
+</script></body></html>

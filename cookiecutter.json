@@ -1,0 +1,16 @@
+{
+    "title": "New Presentation",
+    "description": "",
+    "confidential": "yellow",
+    "folder_name": "slides",
+    "author_name": "Waylon Walker",
+    "author_email": "walker_waylon_s@cat.com",
+    "author_url": "http://www.waylonwalker.com",
+    "author_twitter": "_waylonwalker",
+    "author_github": "waylonwalker",
+    "date": "{% now 'local' %}",
+    "version": "1.0.0",
+    "_copy_without_render": [
+        "*.html",
+        "*static/*"]
+}
